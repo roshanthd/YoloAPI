@@ -46,7 +46,7 @@ public class TestPost {
                 .body("body", equalTo(body));
     }
 
-    @Test(description = "Verify user is able to create new posts", priority = 2)
+    @Test(description = "Verify user is able to create new posts invalid user_id", priority = 2)
     public void testCreateNewPostsWithInvalidUserID() {
         int user_id = 0000;
         String title = "New Post";
